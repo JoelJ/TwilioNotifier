@@ -64,4 +64,11 @@ public class Pair<L, R> {
         return this.left.equals(pairo.getLeft()) && this.right.equals(pairo.getRight());
     }
 
+	/**
+	 * Overridden so the debugger will show the contents of the pair.
+	 */
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + "{" + left + " -> " + right + "} (" + super.toString() + ")";
+	}
 }
